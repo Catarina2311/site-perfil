@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilo/style.css">
-    <title>Perfil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Perfil - Maria Catarina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <section>
+    <div class="container">
+        <header>
             <h1>Maria Catarina</h1>
-        </section>
-        <section>
-            <h2>Aluna do curso técnico em informática</h2>
-        </section>
-    </header>
-    <main>
-        <section>
-            <h2>Detalhes</h2>
-            <ul>
-                <li>Nome: Maria Catarina de Oliveira Viana</li>
-                <li>Idade: 16 anos</li>
-                <li>Local: Nazaré Paulista - SP</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dicta ipsum quia ea similique, iste ex obcaecati quod perferendis, eligendi vero ullam exercitationem nihil quam non? Nisi molestias facere ducimus.</p>
-        </section>
-        <section>
-            <a href="https://wa.me/qr/XQVT7ISOAVZPF1">Contate-me</a>
-        </section>
-        <section>
-            <img src="img/perfil.jpeg" alt="Foto de perfil da aluna Marica Catarina" width="200px"/>
-        </section>
-        <section>
-            <h2>Olá, eu sou Catarina</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab ut veniam fugit perspiciatis voluptatum doloremque incidunt quo quidem. Aliquid, dolore. Aliquid eos nulla delectus voluptatibus accusamus provident incidunt! Nam, aspernatur!</p>
-        </section>
-    </main>
-    <footer>
-        <h3>Direitos reservados</h3>
-    </footer>
-    
-    
+            <p class="subtitulo">Aluna do curso técnico em informática</p>
+            <button class="modo-toggle" onclick="toggleDarkMode()"> Modo escuro</button>
+
+        </header>
+
+        <main class="conteudo">
+            <section class="coluna esquerda">
+                <h2>Detalhes</h2>
+                <p><strong>Nome:</strong> Maria Catarina de Oliveira Viana</p>
+                <p><strong>Idade:</strong> 16 anos</p>
+                <p><strong>Local:</strong> Nazaré Paulista - SP</p>
+
+                <div class="icones-sociais">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </section>
+
+            <section class="coluna meio">
+                <h2>Sobre mim</h2>
+                <p>Escolhi estudar no Ifsp, pois o ensino médio é de grande qualidade. A escolha do curso foi baseada em algo que seria mais favorável no futuro.</p>
+                <button class="btn-contato">Contate-me</button>
+            </section>
+
+            <section class="coluna direita">
+                <div class="imagem-circular">
+                    <img src="img/perfil.jpeg" alt="Foto de perfil da aluna Maria Catarina" />
+                </div>
+                <h3>Olá, eu sou Catarina</h3>
+                <p>Sou estudante do curso informática e estou no 2º período do curso. Tenho gostado das matérias técnicas, mesmo não pensando em seguir na área.</p>
+                <div class="icones-sociais">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Maria Catarina – Todos os direitos reservados</p>
+        </footer>
+    </div>
+    <script>
+        function toggleDarkMode() {
+          document.body.classList.toggle('dark');
+        }
+      </script>
+      
+
+      
 </body>
 </html>
